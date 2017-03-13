@@ -9,6 +9,7 @@ int main(){
 		newgame();
 		
 		char c;
+		cout << "Czy chcesz zagrac jeszcze raz? [t/n]";
 		cin >> c;
 		if(c != 'N' || != 'n')
 			break;
