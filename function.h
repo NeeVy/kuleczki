@@ -15,6 +15,14 @@ void hack(){
 	for (int i=0; i<4; i++){
 		cout<<p[i]<<"\t";
 	}
+	cout<<endl;
+}
+
+void check(){
+//	for(int i=0; i<4; i++){
+//		if( ==p[i])	cout<<
+//	}
+;	
 }
 
 void newgame(){
@@ -26,12 +34,18 @@ void newgame(){
 	
 	ShowGame(history);
 	generate();
+	hack();
+	
+	for(int i=0; i<9; i++){
+		wpisz(i);
+		ShowGame(history);
+	}
 }
 
-void wpisz(){
-	for(int i=0; i<4; i++){
-		cout<<"podaj"<<" "<<i<<" liczbe"<<endl;
-		cin>>p[i];
+void wpisz(int i){
+	for(int j=0; j<4; j++){
+		cout<<"podaj"<<" "<<j<<" liczbe"<<endl;
+		cin>>p[i][j];
 	}
 }
 
